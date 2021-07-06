@@ -7,12 +7,13 @@
   <link rel="stylesheet" media="screen" type="text/css" href="style.css"/>
   <title>Frontend Mentor | Intro component with sign up form</title>
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 10px; text-align: center; margin-top: 20px;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">  
 </head>
 <body>
  
@@ -22,59 +23,53 @@
       but understanding how developers think is invaluable. </p>
   </div>
 
+  <div class="ad&form">
   <div id="ad">
-    <p>Try it free 7 days then $20/mo. thereafter</p>
+    <p><B>Try it free 7 days</B> then $20/mo. thereafter</p>
   </div>
-
-  <div id="form">
-    <form>
-      <div>
-        <input type="text" name="firstName" id="firstName" placeholder="First Name">
-      </div>
-      <div>
-        <input type="text" name="lastName" id="lastName" placeholder="Last Name">
-      </div>
-      <div>
-        <input type="email" name="email" id="email" placeholder="Email Adress">
-      </div>
-      <div>
-        <input type="password" name="password" id="password" placeholder="Password">
-      </div>
-      <div>
-        <button type="submit" name="submit" id="submit">Claim your free trial</button>
-      </div>
-    </form>
-
-    <div>
-      <p>By clicking the button, you are agreeing to our Terms and Services</p>
-    </div>
-  </div>
-
-
-
 
   
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Marie Da Piedade</a>.
-    </p>
-  </footer>
+  <div id="form">
+    <form name="register">
+      
+        <div class="form-group">
+          <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+          <img src="./images/icon-error.svg" alt="error">
+          <small class="name-invalid">First Name cannot be empty</small>
+        </div>
+        
+        <div class="form-group">
+          <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+          <img src="./images/icon-error.svg" alt="error">
+          <small>Last Name cannot be empty</small>
+        </div>
+        
+       
+        <div class="form-group">
+          <input type="email" name="email" id="email" placeholder="Email Adress" required>
+          <img src="./images/icon-error.svg" alt="error">
+          <small>Looks like this is not an email</small>
+        </div>
+        
+      
+        <div class="form-group">
+          <input type="password" name="password" id="password" placeholder="Password" required>
+          <img src="./images/icon-error.svg" alt="error">
+          <small>Password cannot be empty</small>
+        </div>
+      
+        <button type="submit">Claim your free trial</button>
+  
+    </form>
+
+    <div id="agreement">
+      <p>By clicking the button, you are agreeing to our <B style="color: hsl(0, 100%, 74%)">Terms and Services</B></p>
+    </div>
+  </div>
+</div>
+
+  <script src="script.js" async defer></script>
+  
 </body>
 </html>
 
-<!-- Learn to code by watching others
-
-See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-but understanding how developers think is invaluable. 
-
-Try it free 7 days then $20/mo. thereafter
-
-First Name 
-Last Name 
-Email Address
-Password
-
-Claim your free trial 
-
-By clicking the button, you are agreeing to our Terms and Services -->

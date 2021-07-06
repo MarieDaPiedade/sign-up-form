@@ -9,3 +9,157 @@ body {
 #header, #ad {
     color: white;
 }
+
+#ad, #form {
+    box-shadow: 0px 7px 0px hsl(249, 10%, 26%, .2);
+    border-radius: 7px;
+}
+
+#ad {
+    background-color: hsl(248, 32%, 49%);
+    border: 1px solid hsl(248, 32%, 49%);
+    padding: 0 3em 0 3em;
+    margin-top: 4.8em;
+    margin-bottom: 1.5em;
+
+}
+
+#form {
+    border: 1px solid hsl(249, 10%, 26%, .2);
+    background-color: white;
+    padding-top: 1.5em;
+}
+
+input {
+    border: 1px solid hsl(249, 10%, 26%, .2);
+}
+
+.form-group.invalid input {
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
+input, button {
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+input:valid {
+    margin-bottom: 15px;
+    padding: 15px 100px 15px 15px;
+    border: 1px solid hsl(249, 10%, 26%, .2);
+}
+
+input:invalid {
+    border:"1px solid hsl(0, 100%, 74%)";
+    margin-bottom: 15px;
+    padding: 15px 100px 15px 15px;
+}
+
+button {
+    border: 1px solid hsl(154, 59%, 51%);
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 42px 15px 42px;
+    letter-spacing: 2px;
+    box-shadow: 0px -3px 0px hsl(249, 10%, 26%, .1) inset;
+    cursor: pointer;
+}
+
+#agreement {
+    color: hsl(246, 25%, 77%);
+    font-size: 0.6em;
+    text-align: center;
+    margin: 15px 50px 25px 50px;
+}
+
+
+.form-group.invalid input::placeholder{
+    color: white;
+}
+
+.form-group img {
+    display: none;
+  }
+  
+  .form-group.invalid img {
+    display: inline;
+    position: absolute;
+    margin: 15px 50px 0px -40px;
+
+  }
+  
+  .form-group small {
+    display: none;
+  }
+  
+  .form-group.invalid small {
+    display: block;
+    margin: -10px 0px 10px 130px;
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    font-size: 0.6em;
+    font-weight: bold;
+  }
+
+  @media (min-width: 1440px) {
+
+    body {
+        background-image: url('./images/bg-intro-desktop.png');
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #ad {
+        width: 30em;
+
+    }
+
+    #form {
+        width: 36em;
+        margin-bottom: 150px;
+        margin-right: 100px;
+    }
+
+    #header {
+        width: 35em;
+        margin-left: 100px;
+        text-align: left;
+        margin-top: 150px;
+    }
+
+    h2 {
+        font-size: 2.7em;
+    }
+
+    input {
+        width: 30em;
+    }
+
+    button {
+        width: 39em;
+    }
+
+    .form-group.invalid small {
+        margin: -10px 0px 10px 380px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
